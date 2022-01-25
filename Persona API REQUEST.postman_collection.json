@@ -8,312 +8,959 @@
 	},
 	"item": [
 		{
-			"name": "GET ALL",
-			"request": {
-				"url": "http://localhost:8082/api/v1/personas",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": [
+			"name": "Personas",
+			"description": "",
+			"item": [
 				{
-					"id": "21df09d4-69cc-4b36-a34d-22823af90ee9",
+					"name": "GET ONE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/personas/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "e05831cc-3317-4f0f-abb1-f92822b431b0",
+							"name": "GET ONE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:47 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 29,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}"
+						}
+					]
+				},
+				{
 					"name": "GET ALL",
-					"originalRequest": {
+					"request": {
 						"url": "http://localhost:8082/api/v1/personas",
 						"method": "GET",
 						"header": [],
-						"body": {}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 25 Jan 2022 19:50:23 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "keep-alive",
-							"key": "keep-alive",
-							"value": "timeout=60",
-							"description": "Custom header"
-						},
-						{
-							"name": "transfer-encoding",
-							"key": "transfer-encoding",
-							"value": "chunked",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						},
-						{
-							"name": "vary",
-							"key": "vary",
-							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
-						}
-					],
-					"cookie": [],
-					"responseTime": 169,
-					"body": "[{\"id\":1,\"nombre\":\"Violeta\",\"apellido\":\"Epardo\",\"dni\":17479991},{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}]"
-				}
-			]
-		},
-		{
-			"name": "GET ONE",
-			"request": {
-				"url": "http://localhost:8082/api/v1/personas/2",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": [
-				{
-					"id": "a14393fb-68dc-408b-93f7-e341411b2aff",
-					"name": "GET ONE",
-					"originalRequest": {
-						"url": "http://localhost:8082/api/v1/personas/2",
-						"method": "GET",
-						"header": [],
-						"body": {}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 25 Jan 2022 19:50:47 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "keep-alive",
-							"key": "keep-alive",
-							"value": "timeout=60",
-							"description": "Custom header"
-						},
-						{
-							"name": "transfer-encoding",
-							"key": "transfer-encoding",
-							"value": "chunked",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						},
-						{
-							"name": "vary",
-							"key": "vary",
-							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
-						}
-					],
-					"cookie": [],
-					"responseTime": 29,
-					"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}"
-				}
-			]
-		},
-		{
-			"name": "CREATE/SAVE",
-			"request": {
-				"url": "http://localhost:8082/api/v1/personas/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
+						"body": {},
 						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"nombre\": \"Anesie\",\n\t\"apellido\": \"Epardo\",\n\t\"dni\": 19856623\n}"
+					},
+					"response": [
+						{
+							"id": "cdc81d87-c8f4-4b9f-a117-398c7267f1c6",
+							"name": "GET ALL",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:23 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 169,
+							"body": "[{\"id\":1,\"nombre\":\"Violeta\",\"apellido\":\"Epardo\",\"dni\":17479991},{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}]"
+						}
+					]
 				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "UPDATE",
-			"request": {
-				"url": "http://localhost:8082/api/v1/personas/2",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": [
 				{
-					"id": "0bc1ef94-3336-493f-a5c0-6ffd8ad32d65",
+					"name": "CREATE/SAVE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/personas/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"Irma\",\n\t\"apellido\": \"Arellano\",\n\t\"dni\": 1855023,\n\t\"domicilio\": {\n\t\t\"calle\": \"Acatzingo\",\n\t\t\"numero\": 205,\n\t\t\"localidad\": {\n\t\t    \"id\": 1,\n\t\t    \"denominacion\": \"Mitras Centro\"\n\t\t}\n\t\t\n\t},\n\t\"libros\": [\n\t\t{\n\t\t\t\"titulo\": \"Los dias del verano\",\n\t\t\t\"fecha\": 2012,\n\t\t\t\"genero\": \"Fantasia\",\n\t\t\t\"paginas\": 359,\n\t\t\t\"autores\": [\n\t\t\t\t{\n\t\t\t        \"id\": 2,\n\t\t\t        \"nombre\": \"Anesie\",\n\t\t\t        \"apellido\": \"Epardo\",\n\t\t\t        \"biografia\": \"Anesie es una autora muy exitosa. Estudio en la UANL\"\n\t\t    \t}\n\t\t\t]\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
 					"name": "UPDATE",
-					"originalRequest": {
-						"url": "http://localhost:8082/api/v1/personas/2",
+					"request": {
+						"url": "http://localhost:8082/api/v1/personas/1",
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/json",
-								"description": "",
-								"warning": ""
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Anesie\",\n    \"apellido\": \"Arellano\",\n    \"dni\": 19856623\n}"
-						}
+							"raw": "{\n    \"id\": 1,\n    \"nombre\": \"Elizabeth\",\n    \"apellido\": \"Arellano\",\n    \"dni\": 1855023,\n    \"domicilio\": {\n        \"id\": 1,\n        \"calle\": \"Acatzingo\",\n        \"numero\": 205,\n        \"localidad\": {\n            \"id\": 1,\n            \"denominacion\": \"Mitras Centro\"\n        }\n    },\n    \"libros\": [\n        {\n            \"id\": 1,\n            \"titulo\": \"Los dias del verano\",\n            \"fecha\": 2012,\n            \"genero\": \"Fantasia\",\n            \"paginas\": 359,\n            \"autores\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Anesie\",\n                    \"apellido\": \"Epardo\",\n                    \"biografia\": \"Anesie es una autora muy exitosa. Estudio en la UANL\"\n                }\n            ]\n        }\n    ]\n}"
+						},
+						"description": ""
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
+					"response": [
 						{
-							"name": "access-control-allow-origin",
-							"key": "access-control-allow-origin",
-							"value": "*",
-							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
-						},
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 25 Jan 2022 19:54:36 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "keep-alive",
-							"key": "keep-alive",
-							"value": "timeout=60",
-							"description": "Custom header"
-						},
-						{
-							"name": "transfer-encoding",
-							"key": "transfer-encoding",
-							"value": "chunked",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						},
-						{
-							"name": "vary",
-							"key": "vary",
-							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+							"id": "4e9b932c-42d9-4658-9b45-00cfa579ed0a",
+							"name": "UPDATE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Anesie\",\n    \"apellido\": \"Arellano\",\n    \"dni\": 19856623\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:54:36 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 320,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Arellano\",\"dni\":19856623}"
 						}
-					],
-					"cookie": [],
-					"responseTime": 320,
-					"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Arellano\",\"dni\":19856623}"
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/personas/2",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "78d94036-2542-4311-a1b2-6cf4e04531e8",
+							"name": "DELETE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "DELETE",
+								"header": [],
+								"body": {}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:57:16 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 479,
+							"body": ""
+						}
+					]
 				}
 			]
 		},
 		{
-			"name": "DELETE",
-			"request": {
-				"url": "http://localhost:8082/api/v1/personas/2",
-				"method": "DELETE",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": [
+			"name": "Autores",
+			"description": "",
+			"item": [
 				{
-					"id": "588d64f0-8c0e-438f-91fd-958140454007",
+					"name": "GET ONE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/autores/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "c44ab992-8d93-4a62-99a6-90cc204c6507",
+							"name": "GET ONE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:47 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 29,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}"
+						}
+					]
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"url": "http://localhost:8082/api/v1/autores",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "f98d2404-bebc-453f-93bb-37dcc36ab72d",
+							"name": "GET ALL",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:23 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 169,
+							"body": "[{\"id\":1,\"nombre\":\"Violeta\",\"apellido\":\"Epardo\",\"dni\":17479991},{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}]"
+						}
+					]
+				},
+				{
+					"name": "CREATE/SAVE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/autores/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombre\": \"Anesie\",\n\t\"apellido\": \"Epardo\",\n\t\"biografia\": \"Anesie es una autora muy exitosa. Estudio en la UANL\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/autores/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nombre\": \"Anesie\",\n    \"apellido\": \"Epardo\",\n    \"biografia\": \"Anesie es una autora muy exitosa. Estudio en la UANL. Nacio en Monterrey\"\n}"
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "0aa84232-15dd-4a75-993c-ecb81e78611d",
+							"name": "UPDATE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Anesie\",\n    \"apellido\": \"Arellano\",\n    \"dni\": 19856623\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:54:36 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 320,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Arellano\",\"dni\":19856623}"
+						}
+					]
+				},
+				{
 					"name": "DELETE",
-					"originalRequest": {
-						"url": "http://localhost:8082/api/v1/personas/2",
+					"request": {
+						"url": "http://localhost:8082/api/v1/autores/1",
 						"method": "DELETE",
 						"header": [],
-						"body": {}
+						"body": {},
+						"description": ""
 					},
-					"status": "No Content",
-					"code": 204,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
+					"response": [
 						{
-							"name": "access-control-allow-origin",
-							"key": "access-control-allow-origin",
-							"value": "*",
-							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
-						},
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 25 Jan 2022 19:57:16 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "keep-alive",
-							"key": "keep-alive",
-							"value": "timeout=60",
-							"description": "Custom header"
-						},
-						{
-							"name": "vary",
-							"key": "vary",
-							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+							"id": "86258b30-f784-402a-984d-9c95a45b8676",
+							"name": "DELETE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "DELETE",
+								"header": [],
+								"body": {}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:57:16 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 479,
+							"body": ""
 						}
-					],
-					"cookie": [],
-					"responseTime": 479,
-					"body": ""
+					]
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"description": "",
+			"item": [
+				{
+					"name": "GET ONE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/localidades/2",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "661c9685-ee1a-4251-843e-cd872bc6cff2",
+							"name": "GET ONE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:47 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 29,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}"
+						}
+					]
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"url": "http://localhost:8082/api/v1/localidades",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "6f001dc4-8062-42c1-9d7a-4d3431c012c6",
+							"name": "GET ALL",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:50:23 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 169,
+							"body": "[{\"id\":1,\"nombre\":\"Violeta\",\"apellido\":\"Epardo\",\"dni\":17479991},{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Epardo\",\"dni\":19856623}]"
+						}
+					]
+				},
+				{
+					"name": "CREATE/SAVE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/localidades",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"denominacion\": \"Apodaca\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/localidades/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":2,\n\t\"denominacion\": \"San Nicolas\"\n}"
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "51b95317-67da-44d1-9b98-2d6d78cfff40",
+							"name": "UPDATE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Anesie\",\n    \"apellido\": \"Arellano\",\n    \"dni\": 19856623\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:54:36 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 320,
+							"body": "{\"id\":2,\"nombre\":\"Anesie\",\"apellido\":\"Arellano\",\"dni\":19856623}"
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"url": "http://localhost:8082/api/v1/localidades/2",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "938181a8-cfdd-40d5-aa55-8b09b1b7af15",
+							"name": "DELETE",
+							"originalRequest": {
+								"url": "http://localhost:8082/api/v1/personas/2",
+								"method": "DELETE",
+								"header": [],
+								"body": {}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "access-control-allow-origin",
+									"key": "access-control-allow-origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 25 Jan 2022 19:57:16 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=60",
+									"description": "Custom header"
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								}
+							],
+							"cookie": [],
+							"responseTime": 479,
+							"body": ""
+						}
+					]
 				}
 			]
 		}
